@@ -1,13 +1,13 @@
-#Case
+# Case
 
 Basic API server made with laravel.
 
-##Prerequisites
+## Prerequisites
 
 * [Docker](https://docs.docker.com/get-started/)
 * [Docker-compose](https://docs.docker.com/compose/install/)
 
-##Getting Started
+## Getting Started
 
 Run docker-compose and enter container's bash
 ```
@@ -36,11 +36,11 @@ php artisan db:seed
 ```
 And you're ready to go! access [http/localhost](http/localhost) on your browser, and if you want, [http/localhost:8080](http/localhost:8080) to access phpmyadmin and view the database.
 
-##Classifier
+## Classifier
 
 The classifier algorithm classifies priority in object (tickets) at the given json data for this project according to given requisites. If PriorityScore is 0, it means normal priority, else if is >0, means high priority, varying between 1-3, for ordering purposes.
 
-##API
+## API
 
 The api has the following route, where you can get all the tickets from de database:
 
@@ -59,7 +59,7 @@ Also, there are parameters for filtering, sorting and pagination:
 * Allowed filters properties: PriorityScore, TicketID, DateCreate
 * Allowed sort properties: PriorityScore, DateCreate, DateUpdate
 
-##Built With
+## Built With
 
 * [Laravel](https://github.com/laravel/laravel)
 * [Laradock](https://laradock.io/)
